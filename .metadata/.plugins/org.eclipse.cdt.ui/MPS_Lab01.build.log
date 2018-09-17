@@ -1,0 +1,95 @@
+17:39:03 **** Incremental Build of configuration Debug for project MPS_Lab01 ****
+make all 
+Building file: C:/MPS_Labs/stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.c
+Invoking: MCU GCC Compiler
+C:\MPS_Labs\MPS_Lab01\Debug
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DUSE_HAL_DRIVER -DSTM32F769xx -DUSE_STM32F769I_DISCO -I"C:/MPS_Labs/MPS_Lab01/inc" -I"C:/MPS_Labs/stm32lib/Drivers/CMSIS/Device/ST/STM32F7xx/Include" -I"C:/MPS_Labs/stm32lib/Drivers/CMSIS/Include" -I"C:/MPS_Labs/stm32lib/Drivers/STM32F7xx_HAL_Driver/Inc" -Og -g3 -Wall -fmessage-length=0 -Wdouble-promotion -ffunction-sections -c -MMD -MP -MF"stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.d" -MT"stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o" -o "stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o" "C:/MPS_Labs/stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.c"
+Finished building: C:/MPS_Labs/stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.c
+ 
+Building file: C:/MPS_Labs/stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.c
+Invoking: MCU GCC Compiler
+C:\MPS_Labs\MPS_Lab01\Debug
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DUSE_HAL_DRIVER -DSTM32F769xx -DUSE_STM32F769I_DISCO -I"C:/MPS_Labs/MPS_Lab01/inc" -I"C:/MPS_Labs/stm32lib/Drivers/CMSIS/Device/ST/STM32F7xx/Include" -I"C:/MPS_Labs/stm32lib/Drivers/CMSIS/Include" -I"C:/MPS_Labs/stm32lib/Drivers/STM32F7xx_HAL_Driver/Inc" -Og -g3 -Wall -fmessage-length=0 -Wdouble-promotion -ffunction-sections -c -MMD -MP -MF"stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.d" -MT"stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o" -o "stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o" "C:/MPS_Labs/stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.c"
+Finished building: C:/MPS_Labs/stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.c
+ 
+Building file: C:/MPS_Labs/stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.c
+Invoking: MCU GCC Compiler
+C:\MPS_Labs\MPS_Lab01\Debug
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DUSE_HAL_DRIVER -DSTM32F769xx -DUSE_STM32F769I_DISCO -I"C:/MPS_Labs/MPS_Lab01/inc" -I"C:/MPS_Labs/stm32lib/Drivers/CMSIS/Device/ST/STM32F7xx/Include" -I"C:/MPS_Labs/stm32lib/Drivers/CMSIS/Include" -I"C:/MPS_Labs/stm32lib/Drivers/STM32F7xx_HAL_Driver/Inc" -Og -g3 -Wall -fmessage-length=0 -Wdouble-promotion -ffunction-sections -c -MMD -MP -MF"stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.d" -MT"stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.o" -o "stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.o" "C:/MPS_Labs/stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.c"
+Finished building: C:/MPS_Labs/stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.c
+ 
+Building file: C:/MPS_Labs/stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.c
+Invoking: MCU GCC Compiler
+C:\MPS_Labs\MPS_Lab01\Debug
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DUSE_HAL_DRIVER -DSTM32F769xx -DUSE_STM32F769I_DISCO -I"C:/MPS_Labs/MPS_Lab01/inc" -I"C:/MPS_Labs/stm32lib/Drivers/CMSIS/Device/ST/STM32F7xx/Include" -I"C:/MPS_Labs/stm32lib/Drivers/CMSIS/Include" -I"C:/MPS_Labs/stm32lib/Drivers/STM32F7xx_HAL_Driver/Inc" -Og -g3 -Wall -fmessage-length=0 -Wdouble-promotion -ffunction-sections -c -MMD -MP -MF"stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.d" -MT"stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.o" -o "stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.o" "C:/MPS_Labs/stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.c"
+Finished building: C:/MPS_Labs/stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.c
+ 
+Building file: C:/MPS_Labs/stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.c
+Invoking: MCU GCC Compiler
+C:\MPS_Labs\MPS_Lab01\Debug
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DUSE_HAL_DRIVER -DSTM32F769xx -DUSE_STM32F769I_DISCO -I"C:/MPS_Labs/MPS_Lab01/inc" -I"C:/MPS_Labs/stm32lib/Drivers/CMSIS/Device/ST/STM32F7xx/Include" -I"C:/MPS_Labs/stm32lib/Drivers/CMSIS/Include" -I"C:/MPS_Labs/stm32lib/Drivers/STM32F7xx_HAL_Driver/Inc" -Og -g3 -Wall -fmessage-length=0 -Wdouble-promotion -ffunction-sections -c -MMD -MP -MF"stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.d" -MT"stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.o" -o "stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.o" "C:/MPS_Labs/stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.c"
+Finished building: C:/MPS_Labs/stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.c
+ 
+Building file: C:/MPS_Labs/stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.c
+Invoking: MCU GCC Compiler
+C:\MPS_Labs\MPS_Lab01\Debug
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DUSE_HAL_DRIVER -DSTM32F769xx -DUSE_STM32F769I_DISCO -I"C:/MPS_Labs/MPS_Lab01/inc" -I"C:/MPS_Labs/stm32lib/Drivers/CMSIS/Device/ST/STM32F7xx/Include" -I"C:/MPS_Labs/stm32lib/Drivers/CMSIS/Include" -I"C:/MPS_Labs/stm32lib/Drivers/STM32F7xx_HAL_Driver/Inc" -Og -g3 -Wall -fmessage-length=0 -Wdouble-promotion -ffunction-sections -c -MMD -MP -MF"stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.d" -MT"stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.o" -o "stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.o" "C:/MPS_Labs/stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.c"
+Finished building: C:/MPS_Labs/stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.c
+ 
+Building file: C:/MPS_Labs/stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.c
+Invoking: MCU GCC Compiler
+C:\MPS_Labs\MPS_Lab01\Debug
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DUSE_HAL_DRIVER -DSTM32F769xx -DUSE_STM32F769I_DISCO -I"C:/MPS_Labs/MPS_Lab01/inc" -I"C:/MPS_Labs/stm32lib/Drivers/CMSIS/Device/ST/STM32F7xx/Include" -I"C:/MPS_Labs/stm32lib/Drivers/CMSIS/Include" -I"C:/MPS_Labs/stm32lib/Drivers/STM32F7xx_HAL_Driver/Inc" -Og -g3 -Wall -fmessage-length=0 -Wdouble-promotion -ffunction-sections -c -MMD -MP -MF"stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.d" -MT"stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.o" -o "stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.o" "C:/MPS_Labs/stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.c"
+Finished building: C:/MPS_Labs/stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.c
+ 
+Building file: C:/MPS_Labs/stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.c
+Invoking: MCU GCC Compiler
+C:\MPS_Labs\MPS_Lab01\Debug
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DUSE_HAL_DRIVER -DSTM32F769xx -DUSE_STM32F769I_DISCO -I"C:/MPS_Labs/MPS_Lab01/inc" -I"C:/MPS_Labs/stm32lib/Drivers/CMSIS/Device/ST/STM32F7xx/Include" -I"C:/MPS_Labs/stm32lib/Drivers/CMSIS/Include" -I"C:/MPS_Labs/stm32lib/Drivers/STM32F7xx_HAL_Driver/Inc" -Og -g3 -Wall -fmessage-length=0 -Wdouble-promotion -ffunction-sections -c -MMD -MP -MF"stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.d" -MT"stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.o" -o "stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.o" "C:/MPS_Labs/stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.c"
+Finished building: C:/MPS_Labs/stm32lib/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.c
+ 
+Building file: C:/MPS_Labs/stm32lib/Drivers/CMSIS/Device/ST/STM32F7xx/Source/Templates/system_stm32f7xx.c
+Invoking: MCU GCC Compiler
+C:\MPS_Labs\MPS_Lab01\Debug
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DUSE_HAL_DRIVER -DSTM32F769xx -DUSE_STM32F769I_DISCO -I"C:/MPS_Labs/MPS_Lab01/inc" -I"C:/MPS_Labs/stm32lib/Drivers/CMSIS/Device/ST/STM32F7xx/Include" -I"C:/MPS_Labs/stm32lib/Drivers/CMSIS/Include" -I"C:/MPS_Labs/stm32lib/Drivers/STM32F7xx_HAL_Driver/Inc" -Og -g3 -Wall -fmessage-length=0 -Wdouble-promotion -ffunction-sections -c -MMD -MP -MF"stm32lib/Drivers/CMSIS/Device/ST/STM32F7xx/Source/Templates/system_stm32f7xx.d" -MT"stm32lib/Drivers/CMSIS/Device/ST/STM32F7xx/Source/Templates/system_stm32f7xx.o" -o "stm32lib/Drivers/CMSIS/Device/ST/STM32F7xx/Source/Templates/system_stm32f7xx.o" "C:/MPS_Labs/stm32lib/Drivers/CMSIS/Device/ST/STM32F7xx/Source/Templates/system_stm32f7xx.c"
+Finished building: C:/MPS_Labs/stm32lib/Drivers/CMSIS/Device/ST/STM32F7xx/Source/Templates/system_stm32f7xx.c
+ 
+Building file: ../startup/startup_stm32f769xx.s
+Invoking: MCU GCC Assembler
+C:\MPS_Labs\MPS_Lab01\Debug
+arm-none-eabi-as -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -I"C:/MPS_Labs/MPS_Lab01/inc" -g -o "startup/startup_stm32f769xx.o" "../startup/startup_stm32f769xx.s"
+Finished building: ../startup/startup_stm32f769xx.s
+ 
+Building file: ../src/init.c
+Invoking: MCU GCC Compiler
+C:\MPS_Labs\MPS_Lab01\Debug
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DUSE_HAL_DRIVER -DSTM32F769xx -DUSE_STM32F769I_DISCO -I"C:/MPS_Labs/MPS_Lab01/inc" -I"C:/MPS_Labs/stm32lib/Drivers/CMSIS/Device/ST/STM32F7xx/Include" -I"C:/MPS_Labs/stm32lib/Drivers/CMSIS/Include" -I"C:/MPS_Labs/stm32lib/Drivers/STM32F7xx_HAL_Driver/Inc" -Og -g3 -Wall -fmessage-length=0 -Wdouble-promotion -ffunction-sections -c -MMD -MP -MF"src/init.d" -MT"src/init.o" -o "src/init.o" "../src/init.c"
+Finished building: ../src/init.c
+ 
+Building file: ../src/task_3a.c
+Invoking: MCU GCC Compiler
+C:\MPS_Labs\MPS_Lab01\Debug
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DUSE_HAL_DRIVER -DSTM32F769xx -DUSE_STM32F769I_DISCO -I"C:/MPS_Labs/MPS_Lab01/inc" -I"C:/MPS_Labs/stm32lib/Drivers/CMSIS/Device/ST/STM32F7xx/Include" -I"C:/MPS_Labs/stm32lib/Drivers/CMSIS/Include" -I"C:/MPS_Labs/stm32lib/Drivers/STM32F7xx_HAL_Driver/Inc" -Og -g3 -Wall -fmessage-length=0 -Wdouble-promotion -ffunction-sections -c -MMD -MP -MF"src/task_3a.d" -MT"src/task_3a.o" -o "src/task_3a.o" "../src/task_3a.c"
+Finished building: ../src/task_3a.c
+ 
+Building file: ../src/uart.c
+Invoking: MCU GCC Compiler
+C:\MPS_Labs\MPS_Lab01\Debug
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DUSE_HAL_DRIVER -DSTM32F769xx -DUSE_STM32F769I_DISCO -I"C:/MPS_Labs/MPS_Lab01/inc" -I"C:/MPS_Labs/stm32lib/Drivers/CMSIS/Device/ST/STM32F7xx/Include" -I"C:/MPS_Labs/stm32lib/Drivers/CMSIS/Include" -I"C:/MPS_Labs/stm32lib/Drivers/STM32F7xx_HAL_Driver/Inc" -Og -g3 -Wall -fmessage-length=0 -Wdouble-promotion -ffunction-sections -c -MMD -MP -MF"src/uart.d" -MT"src/uart.o" -o "src/uart.o" "../src/uart.c"
+Finished building: ../src/uart.c
+ 
+Building target: MPS_Lab01.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -specs=nosys.specs -specs=nano.specs -T"C:/MPS_Labs/MPS_Lab01/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "MPS_Lab01.elf" @"objects.list"   -lm
+Finished building target: MPS_Lab01.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "MPS_Lab01.elf" "MPS_Lab01.bin"
+arm-none-eabi-size "MPS_Lab01.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5468	     12	   1172	   6652	   19fc	MPS_Lab01.elf
+ 
+
+17:39:15 Build Finished (took 11s.906ms)
+

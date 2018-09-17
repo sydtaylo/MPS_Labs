@@ -1,0 +1,56 @@
+//------------------------------------------------------------------------------------
+// task_3a.c
+//------------------------------------------------------------------------------------
+//
+//
+
+
+//------------------------------------------------------------------------------------
+// Includes
+//------------------------------------------------------------------------------------
+#include "stm32f769xx.h"
+#include "hello.h"
+
+#include<stdint.h>
+
+
+//------------------------------------------------------------------------------------
+// MAIN Routine
+//------------------------------------------------------------------------------------
+int main(void)
+{
+    Sys_Init(); // This always goes at the top of main (defined in init.c)
+
+    unsigned int SWITCH_1 = 0x00000040;
+    unsigned int SWITCH_2 = 0x00000002;
+    unsigned int SWITCH_3 = 0x00000040;
+    unsigned int SWITCH_4 = 0x00000080;
+    char choice;
+
+    volatile uint32_t * RCC_AHB1_CLOCK_ENABLE = (uint32_t*) 0x40023830U; // Enable clock for peripheral bus on GPIO Port J
+    *RCC_AHB1_CLOCK_ENABLE |= 0x0000022DU; // Bitmask for RCC AHB1 initialization: 0x00000200U or 512U in decimal
+
+    GPIOJ->MODER |= 0x04000400U; //Bitmask for GPIO J Pin 5 & 13 initialization (set it to Output mode): 0x00000400U or 1024U in decimal
+    GPIOA->MODER |= 0x01000000U; //Bitmask GPIO A Pin 12 to Output
+    GPIOD->MODER |= 0x00000100U; //Bitmask GPIO D Pin4 to Output
+
+    while(1){
+    	if(SWITCH_1 & GPIOF->IDR)
+    		GPIOJ->BSRR = (uint16_t)GPIO_PIN_13; //Turn on LED1
+    	else
+    		GPIOJ->BSRR = (uint32_t)GPIO_PIN_13 << 16;
+    	if(SWITCH_2 & GPIOJ->IDR)
+    		GPIOJ->BSRR = (uint16_t)GPIO_PIN_5; // Turn on LED2
+    	else
+    	    GPIOJ->BSRR = (uint32_t)GPIO_PIN_5 << 16;
+    	if(SWITCH_3 & GPIOC->IDR)
+    		GPIOA->BSRR = (uint16_t)GPIO_PIN_12; //Turn on LED3
+    	else
+    	    GPIOA->BSRR = (uint32_t)GPIO_PIN_12 << 16;
+    	if(SWITCH_4 & GPIOC->IDR)
+    		GPIOD->BSRR = (uint32_t)GPIO_PIN_4 << 16; //Turn on LED4
+    	else
+    	    GPIOD->BSRR = (uint16_t)GPIO_PIN_4;
+    }
+
+}

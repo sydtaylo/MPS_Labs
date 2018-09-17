@@ -1,0 +1,75 @@
+//------------------------------------------------------------------------------------
+// Hello.c
+//------------------------------------------------------------------------------------
+//
+// Test program to demonstrate serial port I/O.  This program writes a message on
+// the console using the printf() function, and reads characters using the getchar()
+// function.  An ANSI escape sequence is used to clear the screen if a '2' is typed.
+// A '1' repeats the message and the program responds to other input characters with
+// an appropriate message.
+//
+// Any valid keystroke turns on the green LED on the board; invalid entries turn it off
+//
+
+
+//------------------------------------------------------------------------------------
+// Includes
+//------------------------------------------------------------------------------------
+#include "stm32f769xx.h"
+#include "hello.h"
+
+#include<stdint.h>
+
+
+//------------------------------------------------------------------------------------
+// MAIN Routine
+//------------------------------------------------------------------------------------
+int main(void)
+{
+    Sys_Init(); // This always goes at the top of main (defined in init.c)
+
+    char choice;
+
+    printf("\033[33;44m]");
+    fflush(stdout); // Need to flush stdout after using printf that doesn't end in \n
+    printf("\033[2J\033[;H"); // Erase screen & move cursor to home position
+    fflush(stdout); // Need to flush stdout after using printf that doesn't end in \n
+    printf("PRESS <ESC> OR <CTL>+[ TO QUIT\r\n");
+
+    volatile uint32_t * RCC_AHB1_CLOCK_ENABLE = (uint32_t*) 0x40023830U; // Enable clock for peripheral bus on GPIO Port J
+    *RCC_AHB1_CLOCK_ENABLE |= 512U; // Bitmask for RCC AHB1 initialization: 0x00000200U or 512U in decimal
+
+    GPIOJ->MODER |= 1024U; //Bitmask for GPIO J Pin 5 initialization (set it to Output mode): 0x00000400U or 1024U in decimal
+
+
+    GPIOJ->BSRR = (uint16_t)GPIO_PIN_5; // Turn on Green LED (LED2)
+	GPIOJ->BSRR = (uint32_t)GPIO_PIN_5 << 16; // Turn off Green LED (LED2)
+	GPIOJ->ODR ^= (uint16_t)GPIO_PIN_5; // Toggle LED2
+
+//task 1 and 2
+	/*
+    while(1){
+    	choice = getchar();
+    	putchar(choice);
+    	if(choice < 126 && choice > 32) {
+			printf("\rThe keyboard character is %c\r\n", choice);
+			fflush(stdout); // Need to flush stdout after using printf that doesn't end in \n
+    	}
+    	else if(choice == 27) {
+    		return 1;
+    	}
+    	else {
+    		printf("\rThe keyboard character $%02d is 'not printable'.\r\n", choice);
+    		fflush(stdout); // Need to flush stdout after using printf that doesn't end in \n
+    	}
+    }
+    */
+	while(1){
+		volatile uint32_t * GREENLEDBSRR = (uint32_t*) 0x40022418U; // Address of GPIO J Bit Set/Reset Register
+		*GREENLEDBSRR = (uint16_t)0x0020U; // Turn on Green LED (LED2)
+		HAL_Delay(1000); // Pause for a second
+		volatile uint32_t * GREENLEDODR = (uint32_t*) 0x40022414U; // Address of GPIO J Output Data Register
+		*GREENLEDODR ^= (uint16_t)0x0020U; // Toggle Green LED (LED2)
+		HAL_Delay(1000); // Pause for a second
+	}
+}
